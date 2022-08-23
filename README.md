@@ -76,9 +76,9 @@ Download pre-trained model [ESRGAN] into `experiments/pretrained_models`.
       #       test_y_channel: false
     ```
     
-    1. Secondly use the trained Real-ESRNet model as an initialization of the generator, and train thesis model with a combination of L1 loss, perceptual loss and GAN loss.
+2.Secondly use the trained Real-ESRNet model as an initialization of the generator, and train thesis model with a combination of L1 loss, perceptual loss and GAN loss.
      After the training of Real-ESRNet, you now have the file `experiments/train_RealESRNetx4plus_1000k_B12G4_fromESRGAN/model/net_g_1000000.pth`. If you need to specify the pre-trained path to other files, modify the `pretrain_network_g` value in the option file `train_realesrgan_x4plus.yml`.
-1. Modify the option file `train_realesrgan_x4plus.yml` accordingly. Most modifications are similar to those listed above.
+2. Modify the option file `train_realesrgan_x4plus.yml` accordingly. Most modifications are similar to those listed above.
 
 ## Dataset Preparation
 
