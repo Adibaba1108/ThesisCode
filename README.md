@@ -89,8 +89,14 @@ You can download from :
 1. DIV2K: http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip
 2. Flickr2K: https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar
 
+One of the things done is to generate multi-scale images
+
+For the DF2K dataset, we use a multi-scale strategy, *i.e.*, we downsample HR images to obtain several Ground-Truth images with different scales. <br>
+You can use the [scripts/generate_multiscale_DF2K.py](scripts/generate_multiscale_DF2K.py) script to generate multi-scale images. <br>
+
 ## Trained Model
 
+We can use the trained model that I have put it out in the release section,to see the performance of the model.
 
 
 
