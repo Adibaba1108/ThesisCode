@@ -4,8 +4,7 @@
 ##  Dependencies and Installation
 
 - Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux)
-- [PyTorch >= 1.7](https://pytorch.org/)
-
+- PyTorch >= 1.7
 ## Installation
 
 1. Clone repo
@@ -97,7 +96,7 @@ You can use the [scripts/generate_multiscale_DF2K.py](scripts/generate_multiscal
 ## Trained Model
 
 We can use the trained model that I have put it out in the release section,to see the performance of the model.
-
+[Trained Model] (https://github.com/Adibaba1108/ThesisCode/releases/download/v1.0.0/Trained_Thesis_Model_x4plus.pth)
 
 
 
