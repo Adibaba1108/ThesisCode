@@ -16,7 +16,7 @@ from torch.utils import data as data
 @DATASET_REGISTRY.register()
 class RealESRGANDataset(data.Dataset):
     """Dataset used for Real-ESRGAN model:
-    Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data.
+   
 
     It loads gt (Ground-Truth) images, and augments them.
     It also generates blur kernels and sinc kernels for generating low-quality images.

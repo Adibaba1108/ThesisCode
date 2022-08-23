@@ -13,12 +13,6 @@ from torch.nn import functional as F
 
 @MODEL_REGISTRY.register()
 class RealESRGANModel(SRGANModel):
-    """RealESRGAN Model for Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data.
-
-    It mainly performs:
-    1. randomly synthesize LQ images in GPU tensors
-    2. optimize the networks with GAN training.
-    """
 
     def __init__(self, opt):
         super(RealESRGANModel, self).__init__(opt)

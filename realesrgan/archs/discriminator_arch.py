@@ -8,7 +8,6 @@ from torch.nn.utils import spectral_norm
 class UNetDiscriminatorSN(nn.Module):
     """Defines a U-Net discriminator with spectral normalization (SN)
 
-    It is used in Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data.
 
     Arg:
         num_in_ch (int): Channel number of inputs. Default: 3.

@@ -12,7 +12,7 @@ from torch.nn import functional as F
 
 @MODEL_REGISTRY.register()
 class RealESRNetModel(SRModel):
-    """RealESRNet Model for Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data.
+    """ESRNet Model 
 
     It is trained without GAN losses.
     It mainly performs:
