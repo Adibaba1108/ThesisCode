@@ -41,9 +41,9 @@ Download pre-trained model [ESRGAN] into `experiments/pretrained_models`.
      Then modify the content in the option file `options/train_realesrnet_x4plus.yml` accordingly:
     ```yml
     train:
-        name: DF2K+OST
+        name: DF2K
         type: Dataset
-        dataroot_gt: datasets/DF2K  # modify to the root path of your folder
+        dataroot_gt: datasets/DF2K 
         meta_info: ThesisCode/meta_info/meta_info_DF2Kmultiscale+OST_sub.txt
         io_backend:
             type: disk
@@ -75,8 +75,8 @@ Download pre-trained model [ESRGAN] into `experiments/pretrained_models`.
       #       test_y_channel: false
     ```
     
-2.Secondly use the trained Real-ESRNet model as an initialization of the generator, and train thesis model with a combination of L1 loss, perceptual loss and GAN loss.
-     After the training of Real-ESRNet, you now have the file `experiments/train_RealESRNetx4plus_1000k_B12G4_fromESRGAN/model/net_g_1000000.pth`. If you need to specify the pre-trained path to other files, modify the `pretrain_network_g` value in the option file `train_realesrgan_x4plus.yml`.
+2.Secondly use the trained Real-ESRNet model as an initialization of the generator, and I have train thesis model with a combination of L1 loss, perceptual loss and GAN loss.
+     After the training of Real-ESRNet, there will be a file `experiments/train_RealESRNetx4plus_1000k_B12G4_fromESRGAN/model/net_g_1000000.pth`. If one need to specify the pre-trained path to other files, modify the `pretrain_network_g` value in the option file `train_realesrgan_x4plus.yml`.
 2. Modify the option file `train_realesrgan_x4plus.yml` accordingly. Most modifications are similar to those listed above.
 
 ## Dataset Preparation
@@ -90,8 +90,8 @@ You can download from :
 
 One of the things done is to generate multi-scale images
 
-For the DF2K dataset, we use a multi-scale strategy, *i.e.*, we downsample HR images to obtain several Ground-Truth images with different scales. <br>
-You can use the [scripts/generate_multiscale_DF2K.py](scripts/generate_multiscale_DF2K.py) script to generate multi-scale images. <br>
+For the DF2K dataset, I have use a multi-scale strategy, *i.e.*, we downsample HR images to obtain several Ground-Truth images with different scales. <br>
+We can use the [scripts/generate_multiscale_DF2K.py](scripts/generate_multiscale_DF2K.py) script to generate multi-scale images. <br>
 
 ## Trained Model
 
