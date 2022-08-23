@@ -3,7 +3,7 @@
 
 ##  Dependencies and Installation
 
-- Python >= 3.7 (Recommend to use Anaconda(https://www.anaconda.com/download/#linux)
+- Python >= 3.7 
 - PyTorch >= 1.7
 ## Installation
 
