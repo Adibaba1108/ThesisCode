@@ -99,8 +99,7 @@ I have used DF2K (DIV2K and Flickr2K)
 
 You can download from :
 
-1. DIV2K: http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip
-2. Flickr2K: https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar
+https://drive.google.com/file/d/1kCwNIuGJUWkY22G2g3oRkJPnoJVk8nEz/view?usp=sharing
 
 One of the things done is to generate multi-scale images
 
