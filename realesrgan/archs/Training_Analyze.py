@@ -1,7 +1,7 @@
 #from https://github.com/ajbrock/BigGAN-PyTorch (MIT license) - some modifications
 ''' train_fns.py
 Functions for the main loop of training different conditional image models
-Here we calculate the difference in graph we get during Unet training and then we compute that with BigGan
+Here I have calculated the difference in graph we get during Unet training and then we compute that with BigGan
 See the output generated in "Training_Images" folder
 
 '''
