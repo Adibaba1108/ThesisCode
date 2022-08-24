@@ -74,11 +74,25 @@ Download pre-trained model [ESRGAN] into `experiments/pretrained_models`.
       #       crop_border: 4
       #       test_y_channel: false
     ```
+    <br>
+    The formal training. I have used the `--auto_resume` argument to automatically resume the training if necessary.
+    
+
+    Train with **a single GPU**:
+    ```bash
+    python realesrgan/train.py -opt options/train_realesrnet_x4plus.yml --auto_resume
+    ```
     
 2.Secondly use the trained Real-ESRNet model as an initialization of the generator, and I have train thesis model with a combination of L1 loss, perceptual loss and GAN loss.<br>
      After the training of Real-ESRNet, there will be a file `experiments/train_RealESRNetx4plus_1000k_B12G4_fromESRGAN/model/net_g_1000000.pth`. If one need to specify the pre-trained path to other files, modify the `pretrain_network_g` value in the option file `train_realesrgan_x4plus.yml`.
    Modify the option file `train_realesrgan_x4plus.yml` accordingly. Most modifications are similar to those listed above.<br>
- This is the file where the 2nd model training code is present.
+ This is the file where the 2nd model training code is present.<br>
+ 1. The formal training. We use four GPUs for training. We use the `--auto_resume` argument to automatically resume the training if necessary.
+
+    Train with **a single GPU**:
+    ```bash
+    python realesrgan/train.py -opt options/train_realesrgan_x4plus.yml --auto_resume
+    ```
 ## Dataset Preparation
 
 I have used DF2K (DIV2K and Flickr2K) 
