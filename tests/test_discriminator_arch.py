@@ -17,3 +17,9 @@ def test_unetdiscriminatorsn():
         net.cuda()
         output = net(img.cuda())
         assert output.shape == (1, 1, 32, 32)
+        
+        
+    """
+    Uncomment this to get the Graph of Unet discriminator performing during training.
+   
+    """
