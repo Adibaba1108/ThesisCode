@@ -87,7 +87,7 @@ Download pre-trained model [ESRGAN] into `experiments/pretrained_models`.
      After the training of Real-ESRNet, there will be a file `experiments/train_RealESRNetx4plus_1000k_B12G4_fromESRGAN/model/net_g_1000000.pth`. If one need to specify the pre-trained path to other files, modify the `pretrain_network_g` value in the option file `train_realesrgan_x4plus.yml`.
    Modify the option file `train_realesrgan_x4plus.yml` accordingly. Most modifications are similar to those listed above.<br>
  This is the file where the 2nd model training code is present.<br>
- 1. The formal training. We use four GPUs for training. We use the `--auto_resume` argument to automatically resume the training if necessary.
+ 1. The formal training.Again same as above used the `--auto_resume` argument to automatically resume the training if necessary.
 
     Train with **a single GPU**:
     ```bash
