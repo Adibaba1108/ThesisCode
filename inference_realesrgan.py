@@ -9,7 +9,7 @@ from realesrgan.archs.srvgg_arch import SRVGGNetCompact
 
 
 def main():
-    """Inference demo for Real-ESRGAN.
+    """Inference demo for the thesisModel.
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input', type=str, default='inputs', help='Input image or folder')
